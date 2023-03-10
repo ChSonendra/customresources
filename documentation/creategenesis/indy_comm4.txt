@@ -1,0 +1,21 @@
+root@instance-1:/home/indy_test/documentation/creategenesis# INDY_NETWORK_NAME=indyNetwork
+root@instance-1:/home/indy_test/documentation/creategenesis# awk '{if (index(, NETWORK_NAME) != 0) {print(NETWORK_NAME="$INDY_NETWORK_NAME")} e
+lse print(./startEverything.sh)}' /etc/indy/indy_config.py> /tmp/indy_config.py
+awk: cmd. line:1: {if (index(, NETWORK_NAME) != 0) {print(NETWORK_NAME="$INDY_NETWORK_NAME")} else print(./startEverything.sh)}
+awk: cmd. line:1:            ^ syntax error
+awk: cmd. line:1: {if (index(, NETWORK_NAME) != 0) {print(NETWORK_NAME="$INDY_NETWORK_NAME")} else print(./startEverything.sh)}
+awk: cmd. line:1:                          ^ 1 is invalid as number of arguments for index
+root@instance-1:/home/indy_test/documentation/creategenesis# mv /tmp/indy_config.py /etc/indy/indy_config.py
+root@instance-1:/home/indy_test/documentation/creategenesis# mkdir /var/lib/indy/indyNetwork
+mkdir: cannot create directory ‘/var/lib/indy/indyNetwork’: File exists
+root@instance-1:/home/indy_test/documentation/creategenesis#
+
+
+
+
+
+
+
+
+
+

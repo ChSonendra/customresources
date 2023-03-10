@@ -1,0 +1,21 @@
+root@instance-1:/home/indy_test/documentation# start_indy_node node2 0.0.0.0 9703 0.0.0.0 9704
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+{
+  "name": "webdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "csv-stringify": "^6.2.4",
+    "debug": "^4.3.4",
+    "express": "^4.17.3",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.5.28",
+    "node-webhooks": "^1.4.2",
+    "pdf-lib": "^1.17.1"
+  }
+}

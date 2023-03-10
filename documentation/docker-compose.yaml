@@ -1,0 +1,84 @@
+version: '3'
+services:
+
+  indy-node1:
+    container_name: node1
+    image: indy_node:1.0
+    tty: true
+    restart: unless-stopped
+    working_dir: /home/indy
+    environment:
+      - INDY_NODE_NAME=node1
+      - INDY_NODE_IP=34.174.183.175
+      - INDY_NODE_PORT=9701
+      - INDY_CLIENT_IP=34.174.183.175
+      - INDY_CLIENT_PORT=9702
+      - INDY_NODE_SEED=00000000000000000000000011111111
+      - INDY_NETWORK_NAME=indyNetwork
+    ports:
+      - "9701:9701"
+      - "9702:9702"
+    networks:
+      - indyNetwork  
+
+  indy-node2:
+    container_name: node2
+    image:  indy_node:1.0
+    tty: true
+    restart: unless-stopped
+    working_dir: /home/indy
+    environment:
+      - INDY_NODE_NAME=node2
+      - INDY_NODE_IP=34.174.183.175
+      - INDY_NODE_PORT=9703
+      - INDY_CLIENT_IP=34.174.183.175
+      - INDY_CLIENT_PORT=9704
+      - INDY_NODE_SEED=00000000000000000000000011111112
+      - INDY_NETWORK_NAME=indyNetwork
+    ports:
+      - "9703:9703"
+      - "9704:9704"
+    networks:
+      - indyNetwork  
+
+  indy-node3:
+    container_name: node3
+    image:  indy_node:1.0
+    tty: true
+    restart: unless-stopped
+    working_dir: /home/indy
+    environment:
+      - INDY_NODE_NAME=node3
+      - INDY_NODE_IP=34.174.183.175
+      - INDY_NODE_PORT=9705
+      - INDY_CLIENT_IP=34.174.183.175
+      - INDY_CLIENT_PORT=9706
+      - INDY_NODE_SEED=00000000000000000000000011111113
+      - INDY_NETWORK_NAME=indyNetwork
+    ports:
+      - "9705:9705"
+      - "9706:9706"
+    networks:
+      - indyNetwork    
+
+  indy-node4:
+    container_name: node4
+    image:  indy_node:1.0
+    tty: true
+    restart: unless-stopped
+    working_dir: /home/indy
+    environment:
+      - INDY_NODE_NAME=node4
+      - INDY_NODE_IP=34.174.183.175
+      - INDY_NODE_PORT=9707
+      - INDY_CLIENT_IP=34.174.183.175
+      - INDY_CLIENT_PORT=9708
+      - INDY_NODE_SEED=00000000000000000000000011111114
+      - INDY_NETWORK_NAME=indyNetwork
+    ports:
+      - "9707:9707"
+      - "9708:9708"
+    networks:
+      - indyNetwork        
+networks:
+  indyNetwork:

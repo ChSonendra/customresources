@@ -1,0 +1,40 @@
+indy-cli
+root@instance-1:/home/indy_test/documentation# indy-cli
+indy> wallet delete newNetwork key=key
+Wallet "newNetwork" has been deleted
+indy> wallet create newNetwork key=key
+Wallet "newNetwork" has been created
+indy> wallet open newNetwork key=key
+Wallet "newNetwork" has been opened
+newNetwork:indy> did new seed=000000000000000000000000Trustee1
+Did "V4SGRU86Z58d6TV7PBUe6f" has been created with "~CoRER63DVYnWZtK8uAzNbx" verkey
+newNetwork:indy> did new seed=000000000000000000000000Trustee2
+Did "LnXR1rPnncTPZvRdmJKhJQ" has been created with "~RTBtVN3iwcFhbWZzohFTMi" verkey
+newNetwork:indy> did new seed=000000000000000000000000Trustee3
+Did "PNQm3CwyXbN5e39Rw3dXYx" has been created with "~AHtGeRXtGjVfXALtXP9WiX" verkey
+newNetwork:indy> did new seed=00000000000000000000000011111111
+Did "E6oxYjxwKCiF7jbfzxomCz" has been created with "~L8GQAjq1QMcpHd7U9B7Ygn" verkey
+newNetwork:indy> did new seed=00000000000000000000000011111112
+Did "3Zu6c6CYK1dqQARqcSaRFV" has been created with "~FadyaA3isK3yUGChhcZyS9" verkey
+newNetwork:indy> did new seed=00000000000000000000000011111113
+Did "YUeayQyg8mJBwH7qdzLdr1" has been created with "~Qu9LCSUVte1tc18irkFHsN" verkey
+newNetwork:indy> did new seed=00000000000000000000000011111114
+Did "R2QahsmLCtj5Pi6pY8KPF2" has been created with "~CurLyfR4jE2pDKtDVtAteA" verkey
+newNetwork:indy>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
